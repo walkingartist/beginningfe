@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="table.js" ></script>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<style>
+    tr{
+        height: 50px;}
+    td{
+        border: darkgrey 1px solid;
+        width: 12.5%;
+        text-align: center;
+    }
+    select{
+        border: darkgrey 1px solid;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+    select option{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="搜索...">
+    <button onclick="find()">搜索</button>
+    <button onclick="find2()">搜索2</button>
+    <button onclick="returning()">返回</button>
+    <table border="0" style="width: 1000px;text-align: center;border-collapse: collapse;" id="table" >
+        <tr style="background-color:aliceblue;">
+            <td id="td">姓名</td>
+            <td id="td">性别</td>
+            <td id="td">婚姻状况</td>
+            <td id="td">外号</td>
+            <td id="td">账号</td>
+            <td id="td">语文</td>
+            <td id="td">数学</td>
+            <td id="td">总成绩</td>
+        </tr>
+    </table>
+    <div style="margin-left: 400px;width: 300px;height: 30px;">
+        <div style="display: inline-block;"> <button onclick="prev()"><</button></div>
+        <div style="display: inline-block;"> <p id="page" style="width: 45px;font-size: 15px;"></p></div>
+        <div style="display: inline-block;"> <button onclick="next()">></button></div>
+        <div style="display: inline-block;"> 至<input type="text" id="turnp" style="width: 20px;">页</div>
+        <div style="display: inline-block;"> <button onclick="turn()">跳转</button></div>
+    </div>
+    <br>
+    <button onclick="reveal()" id="btn">编辑</button>
+    <div id="div1" style="width: 1000px;height: 100px;display: none;">
+        <button onclick="chose_all()">全选</button>
+        <button onclick="cancel_all()">取消全选</button>
+        <button onclick="add()" >添加</button>
+        <button onclick="addm()">批量添加</button>
+        <button onclick="del()">删除</button>
+        <button onclick="odel()">选择删除</button>
+        
+    </div>
+</body>
+</html>

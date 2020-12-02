@@ -94,6 +94,7 @@
 .img img{
     width: 500px;
     height: 345px;
+    transition: all 2s;
 }
 .p{ 
     width: 800px;
@@ -112,14 +113,19 @@
     background-color: tomato;
 }
 
-@keyframes spin{
+/* @keyframes spin{
     0%{transform: rotateY(0deg)}
     100%{transform: rotateY(360deg);
     }
 }
 .img :hover{
     animation: spin 3s ;
+} */
+.img :hover{
+    transform: rotateY(360deg);
 }
+
+
 
 
 /* #heart{

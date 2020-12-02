@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="table.js" type="text/javasricpt"></script>
+    <style>
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        table tr td{
+            width: 12.5%;
+            color: aquamarine;
+        }
+    </style>
+
+<script>
+    // function p() {
+    // var tr = document.getElementById("h");//获取表格的dom节点
+    //  var td = tr.rows[0].cells[0];
+    //  td.onclick=alert("asjaj");
+    // }
+    // window.onload=function a(){
+    //     var table=document.getElementById("h");
+    //     var tab=table.cloneNode(true);
+    //     table.appendChild(tab);
+    // }
+
+
+
+
+    // window.onload=function reveal() {
+    //     var td=document.getElementById("td");
+    //     td.onclick=alert(td.innerText);
+    // }
+    function reveal() {
+        var td=document.getElementById("td");
+        td.onclick=alert(td.innerText);
+    }
+
+    function edit(){
+        var td=document.getElementById("td");
+        td.innerText=prompt("请输入需要修改的值","张三");
+    }
+
+
+</script>
+</head>
+<body >
+    <h1>表格</h1>
+    <table border="1" id="h" >
+        <tr>
+            <td style="width: 12.5%;" id="td"  ondblclick="edit()" onclick="reveal()">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;">姓名</td>
+            <td style="width: 12.5%;"></td>
+
+        </tr>
+        <tr>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+            <td style="width: 12.5%;">&nbsp;</td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
